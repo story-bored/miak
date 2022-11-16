@@ -1,0 +1,205 @@
+img {
+  max-width: 50%;
+  max-height: 50%;
+ }
+body{
+background-color: #333;; 
+text-align: center; font-family: 'Roboto Mono', monospace; color: teal;
+}
+
+a { color: inherit; } 
+
+a { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
+
+a:visited { text-decoration: none; color:black; }
+a:hover { text-decoration: none; color:blue; }
+a:focus { text-decoration: none; color:yellow; }
+a:hover, a:active { text-decoration: none; color:black }
+
+.home{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    font-size: 25px;
+    width: 8em;
+    height: 2em;
+    color: teal;
+    border-left: 0.08em solid;
+    position: relative;
+    margin-top: 0.8em;
+    cursor: pointer;
+}
+
+li::before,
+li::after
+ {
+    content: '';
+    position: absolute;
+    width: inherit;
+    border-left: inherit;
+    z-index: -1;
+}
+
+li::before {
+    height: 80%;
+    top: 10%;
+    left: calc(-0.15em - 0.08em * 2);
+    filter: brightness(0.8);
+}
+
+li::after {
+    height: 60%;
+    top: 20%;
+    left: calc(-0.15em * 2 - 0.08em * 3);
+    filter: brightness(0.6);
+}
+
+li span {
+    position: relative;
+    height: 120%;
+    top: -10%;
+    box-sizing: border-box;
+    border: 0.08em solid;
+    background-color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    text-transform: capitalize;
+    transform: translateX(calc(-0.15em * 3 - 0.08em * 2));
+    transition: 0.3s;
+}
+
+li:hover span {
+    transform: translateX(0.15em);
+}
+
+.text1 {
+  font-family: 'Press Start 2P', monospace;
+  overflow: hidden; 
+  border-right: .15em solid orange; 
+  white-space: nowrap; 
+  margin: 0 auto; 
+  letter-spacing: .10em; 
+  animation: 
+    typing 2.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: teal }
+}
+
+.text_yes{
+display: inline-block;
+outline: none;
+cursor: pointer;
+font-weight: 600;
+border-radius: 3px;
+padding: 12px 24px;
+border: 0;
+color: black;
+background: teal;
+line-height: 1.15;
+font-size: 16px;}
+.text_yes:hover {
+  transition: all .1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FFFFA7;
+}
+
+.text_no{
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 30px;
+  border: 0;
+  color: black;
+  background: teal;
+  line-height: 1.15;
+  font-size: 16px;}
+  .text_no:hover {
+      transition: all .1s ease;
+      box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FFFFA7;
+  }
+
+  .text_cancel{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 30px;
+    border: 0;
+    color: black;
+    background: teal;
+    line-height: 1.15;
+    font-size: 16px;}
+    .text_no:hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FFFFA7;
+    }
+  
+  .text_allow{
+    display: inline-block;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 3px;
+    padding: 12px 30px;
+    border: 0;
+    color: black;
+    background: teal;
+    line-height: 1.15;
+    font-size: 16px;}
+    .text_allow:hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FFFFA7;
+    }
+    .text_huh{
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      font-weight: 600;
+      border-radius: 3px;
+      padding: 5px 20px;
+      border: 0;
+      color: black;
+      background: teal;
+      line-height: 1.15;
+      font-size: 20px;}
+      .text_huh:hover {
+          transition: all .1s ease;
+          box-shadow: 0 0 0 0 #fff, 0 0 0 3px #FFFFA7;
+      }
+
+      .btn {
+        cursor: pointer;
+        border: transparent;
+        background-color: transparent;
+        color: transparent;
+ }
+ 
